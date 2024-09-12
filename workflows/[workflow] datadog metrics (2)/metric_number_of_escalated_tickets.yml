@@ -1,0 +1,118 @@
+id: metric_number_of_escalated_tickets
+type: datasource
+subtype: OpenAPIQuery
+resourceName: 1968c738-e07e-4db0-8119-d521f1cfc0dd
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - requestBodyMetadata: ''
+    - method: post
+    - allowedGroupIds: []
+    - streamResponse: false
+    - operationId: SubmitMetrics
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - server: ''
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - path: /api/v2/series
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - autoPaginate: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - workflowBlockUuid: null
+    - runWhenPageLoadsDelay: ''
+    - parameters: '{}'
+    - data: null
+    - specPathOverride: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - requestBodyDynamicStates: '{"series":false}'
+    - queryRunTime: null
+    - changesetObject: ''
+    - requestBody: >-
+        {"series":[{"points":[{"value":"{{startTrigger.data.tickets_escalated}}","timestamp":"{{startTrigger.data.timestamp}}"}],"type":1,"interval":"1","tags":["env:{{startTrigger.data.env}}","workflow_id:{{
+        startTrigger.data.workflow_id }}","workflow_name:{{
+        startTrigger.data.workflow_name}}"],"metric":"retool.workflow.tickets_escalated"}]}
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - specBasePath: ''
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - serverVariables: ''
+    - enableErrorTransformer: false
+    - autoPaginateLimit: 500
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - parameterDynamicStates: '{"Content-Encoding":false}'
+    - parameterMetadata: ''
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2024-05-06T09:47:56.443Z
+blockData:
+  top: 48
+  left: 1584
+  uuid: 8a15a802-8406-43cf-a867-949cbf65f6aa
+  pluginId: metric_number_of_escalated_tickets
+  blockType: default
+  dimensions:
+    width: 464
+    height: 1024
+  editorType: OpenAPIQuery
+  retryPolicy:
+    numAttempts: 6
+    initialIntervalMs: 1000
+  resourceName: 9ae6607d-9ec3-405f-ba77-7ea5a212a26f
+  incomingPorts:
+    - portId: 87aa3808-9c46-4b7f-9d98-a89ca6af2a18
+      blockId: acded4c4-6179-44be-9aff-4fd5e2b38186
+  responsePanelState: closed
+  incomingOnSuccessEdges: []

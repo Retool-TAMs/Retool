@@ -1,0 +1,118 @@
+id: success_or_failure
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - streamResponse: false
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: |-
+        if (startTrigger.data.status === "SUCCESS") {
+          executePathAtMostOnce('0')
+        }
+        else { executePathAtMostOnce('1') }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - workflowBlockUuid: null
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2024-05-06T07:44:53.739Z
+blockData:
+  top: 48
+  left: 1072
+  uuid: acded4c4-6179-44be-9aff-4fd5e2b38186
+  options:
+    conditions:
+      - id: bb4a5d13-aba1-49db-a4cf-faf543aa48d0
+        type: if
+        statement: startTrigger.data.status === "SUCCESS"
+        outgoingPortId: 87aa3808-9c46-4b7f-9d98-a89ca6af2a18
+      - id: 8e677d21-0f81-4c72-8b8d-00f4ab5719b6
+        type: else
+        statement: ''
+        outgoingPortId: 90e535a3-8d43-483b-a793-5fd2a5941f9f
+  pluginId: success_or_failure
+  blockType: conditional
+  editorType: JavascriptQuery
+  onboarding: false
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts: []
+  outgoingPorts:
+    - id: 87aa3808-9c46-4b7f-9d98-a89ca6af2a18
+      name: '0'
+      type: conditional
+    - id: 90e535a3-8d43-483b-a793-5fd2a5941f9f
+      name: '1'
+      type: conditional
+  responsePanelState: closed
+  incomingOnSuccessEdges:
+    - 0bd91614-fc0a-4c2f-8de4-14b95c2c453f

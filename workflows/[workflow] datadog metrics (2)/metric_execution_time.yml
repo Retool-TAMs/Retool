@@ -1,0 +1,113 @@
+id: metric_execution_time
+type: datasource
+subtype: OpenAPIQuery
+resourceName: 1968c738-e07e-4db0-8119-d521f1cfc0dd
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - requestBodyMetadata: '{"series":[{"points":[{}]}]}'
+    - method: post
+    - allowedGroupIds: []
+    - streamResponse: false
+    - operationId: SubmitMetrics
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - server: ''
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - path: /api/v2/series
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - autoPaginate: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - workflowBlockUuid: null
+    - runWhenPageLoadsDelay: ''
+    - parameters: '{}'
+    - data: null
+    - specPathOverride: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - requestBodyDynamicStates: '{"series":{"0":"{\"points\":[{}]}","points":[{}]}}'
+    - queryRunTime: null
+    - changesetObject: ''
+    - requestBody: >-
+        {"series":[{"points":[{"value":"{{startTrigger.data.exec_time}}","timestamp":"{{startTrigger.data.timestamp}}"}],"metric":"retool.workflow.execution_time","tags":["env:{{retoolContext.configVars.env}}","workflow_id:{{
+        startTrigger.data.workflow_id }}","workflow_name:{{
+        startTrigger.data.workflow_name}}","status:{{startTrigger.data.status}}"],"type":3}]}
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - specBasePath: ''
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - serverVariables: ''
+    - enableErrorTransformer: false
+    - autoPaginateLimit: 500
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - parameterDynamicStates: '{"Content-Encoding":false}'
+    - parameterMetadata: ''
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2024-05-04T21:53:37.674Z
+blockData:
+  top: 48
+  left: 560
+  uuid: 0bd91614-fc0a-4c2f-8de4-14b95c2c453f
+  pluginId: metric_execution_time
+  blockType: default
+  editorType: OpenAPIQuery
+  retryPolicy:
+    numAttempts: 6
+    initialIntervalMs: 1000
+  resourceName: 1968c738-e07e-4db0-8119-d521f1cfc0dd
+  responsePanelState: closed
+  incomingOnSuccessEdges:
+    - 53c848a4-7a39-4d59-a5d8-124789bf5cb2

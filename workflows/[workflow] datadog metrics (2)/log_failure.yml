@@ -1,0 +1,111 @@
+id: log_failure
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - streamResponse: false
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: >-
+        if (workflowContext.currentRun.error.message){
+          console.log(`The workflow ${workflowContext.workflowId}: ${workflowContext.name} failed with error: ${workflowContext.currentRun.error.message}`)
+        } else {
+          const timeout = (Date.now() - workflowContext.currentRun.startedAtEpochMs) / (60*1000) ;
+          console.log(`The workflow ${workflowContext.workflowId}: ${workflowContext.name} failed with error: timeout after ${timeout} min`);
+        }
+
+
+        console.log(`The workflow ${workflowContext.workflowId}:
+        ${workflowContext.name} failed in run:
+        ${JSON.stringify(workflowContext.currentRun)}`)
+
+
+        return { }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - workflowBlockUuid: null
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2024-06-26T11:59:54.446Z
+blockData:
+  top: 512
+  left: 48
+  uuid: 51e44cff-4f7c-4887-a282-7f131599fc8a
+  pluginId: log_failure
+  blockType: code
+  editorType: JavascriptQuery
+  retryPolicy:
+    numAttempts: 6
+    initialIntervalMs: 1000
+  resourceName: JavascriptQuery
+  incomingPorts: []
+  failureCondition: 'true'
+  responsePanelState: open
+  incomingOnSuccessEdges: []
