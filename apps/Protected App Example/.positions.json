@@ -9,5 +9,10 @@
     "col": 1,
     "height": 1,
     "width": 2
+  },
+  "button3": {
+    "row": 2.8,
+    "height": 1,
+    "width": 2
   }
 }
