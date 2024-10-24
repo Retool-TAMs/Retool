@@ -29,5 +29,6 @@
       <Option id="bb74f" value="0b99f560-48d0-43a1-b351-0e28dc0ecc0b" />
       <Option id="57eeb" value="178e931e-7f6d-494f-aeb2-26333ba8b91e" />
     </Select>
+    <JSONExplorer id="jsonExplorer1" value="{{ query1.data }}" />
   </Frame>
 </App>
