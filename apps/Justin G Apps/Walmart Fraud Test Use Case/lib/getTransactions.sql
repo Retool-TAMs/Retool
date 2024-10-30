@@ -1,0 +1,1 @@
+SELECT * from walmart_nj_sales_summary where store_location ={{ current_user.metadata.geoState }} order by {{ table1.pagination.pageSize }}

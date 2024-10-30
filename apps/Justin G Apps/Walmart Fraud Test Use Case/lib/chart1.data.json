@@ -1,0 +1,380 @@
+[
+  {
+    "name": "id",
+    "x": {{formatDataAsObject( chartReturns.value )['store_location']}},
+    "y": {{formatDataAsObject( chartReturns.value )['total_price']}},
+    "type": "bar",
+    "hovertemplate": "<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>",
+    "transforms": [
+      {
+        "type": "groupby",
+        "groups": {{formatDataAsObject( chartReturns.value )['transaction_date']}},
+        "styles": [
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[0]}},
+            "value": {
+              "marker": {
+                "color": "#1E3A8A"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[1]}},
+            "value": {
+              "marker": {
+                "color": "#3170F9"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[2]}},
+            "value": {
+              "marker": {
+                "color": "#60A5FA"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[3]}},
+            "value": {
+              "marker": {
+                "color": "#DBEAFE"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "sort",
+        "target": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "order": "ascending"
+      },
+      {
+        "type": "aggregate",
+        "groups": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "aggregations": [
+          {
+            "target": "y",
+            "func": "sum",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "customer_id",
+    "x": {{formatDataAsObject( chartReturns.value )['store_location']}},
+    "y": {{formatDataAsObject( chartReturns.value )['customer_id']}},
+    "type": "bar",
+    "hovertemplate": "<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>",
+    "transforms": [
+      {
+        "type": "groupby",
+        "groups": {{formatDataAsObject( chartReturns.value )['transaction_date']}},
+        "styles": [
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[0]}},
+            "value": {
+              "marker": {
+                "color": "#1E3A8A"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[1]}},
+            "value": {
+              "marker": {
+                "color": "#3170F9"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[2]}},
+            "value": {
+              "marker": {
+                "color": "#60A5FA"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[3]}},
+            "value": {
+              "marker": {
+                "color": "#DBEAFE"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "sort",
+        "target": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "order": "ascending"
+      },
+      {
+        "type": "aggregate",
+        "groups": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "aggregations": [
+          {
+            "target": "y",
+            "func": "sum",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "transaction_id",
+    "x": {{formatDataAsObject( chartReturns.value )['store_location']}},
+    "y": {{formatDataAsObject( chartReturns.value )['transaction_id']}},
+    "type": "bar",
+    "hovertemplate": "<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>",
+    "transforms": [
+      {
+        "type": "groupby",
+        "groups": {{formatDataAsObject( chartReturns.value )['transaction_date']}},
+        "styles": [
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[0]}},
+            "value": {
+              "marker": {
+                "color": "#1E3A8A"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[1]}},
+            "value": {
+              "marker": {
+                "color": "#3170F9"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[2]}},
+            "value": {
+              "marker": {
+                "color": "#60A5FA"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[3]}},
+            "value": {
+              "marker": {
+                "color": "#DBEAFE"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "sort",
+        "target": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "order": "ascending"
+      },
+      {
+        "type": "aggregate",
+        "groups": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "aggregations": [
+          {
+            "target": "y",
+            "func": "sum",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "quantity",
+    "x": {{formatDataAsObject( chartReturns.value )['store_location']}},
+    "y": {{formatDataAsObject( chartReturns.value )['quantity']}},
+    "type": "bar",
+    "hovertemplate": "<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>",
+    "transforms": [
+      {
+        "type": "groupby",
+        "groups": {{formatDataAsObject( chartReturns.value )['transaction_date']}},
+        "styles": [
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[0]}},
+            "value": {
+              "marker": {
+                "color": "#1E3A8A"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[1]}},
+            "value": {
+              "marker": {
+                "color": "#3170F9"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[2]}},
+            "value": {
+              "marker": {
+                "color": "#60A5FA"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[3]}},
+            "value": {
+              "marker": {
+                "color": "#DBEAFE"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "sort",
+        "target": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "order": "ascending"
+      },
+      {
+        "type": "aggregate",
+        "groups": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "aggregations": [
+          {
+            "target": "y",
+            "func": "sum",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "price_per_unit",
+    "x": {{formatDataAsObject( chartReturns.value )['store_location']}},
+    "y": {{formatDataAsObject( chartReturns.value )['price_per_unit']}},
+    "type": "bar",
+    "hovertemplate": "<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>",
+    "transforms": [
+      {
+        "type": "groupby",
+        "groups": {{formatDataAsObject( chartReturns.value )['transaction_date']}},
+        "styles": [
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[0]}},
+            "value": {
+              "marker": {
+                "color": "#1E3A8A"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[1]}},
+            "value": {
+              "marker": {
+                "color": "#3170F9"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[2]}},
+            "value": {
+              "marker": {
+                "color": "#60A5FA"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[3]}},
+            "value": {
+              "marker": {
+                "color": "#DBEAFE"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "sort",
+        "target": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "order": "ascending"
+      },
+      {
+        "type": "aggregate",
+        "groups": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "aggregations": [
+          {
+            "target": "y",
+            "func": "sum",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "total_price",
+    "x": {{formatDataAsObject( chartReturns.value )['store_location']}},
+    "y": {{formatDataAsObject( chartReturns.value )['total_price']}},
+    "type": "bar",
+    "hovertemplate": "<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>",
+    "transforms": [
+      {
+        "type": "groupby",
+        "groups": {{formatDataAsObject( chartReturns.value )['transaction_date']}},
+        "styles": [
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[0]}},
+            "value": {
+              "marker": {
+                "color": "#1E3A8A"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[1]}},
+            "value": {
+              "marker": {
+                "color": "#3170F9"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[2]}},
+            "value": {
+              "marker": {
+                "color": "#60A5FA"
+              }
+            }
+          },
+          {
+            "target": {{_.uniq(formatDataAsObject( chartReturns.value )['transaction_date'])[3]}},
+            "value": {
+              "marker": {
+                "color": "#DBEAFE"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "sort",
+        "target": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "order": "ascending"
+      },
+      {
+        "type": "aggregate",
+        "groups": {{formatDataAsObject( chartReturns.value )['store_location']}},
+        "aggregations": [
+          {
+            "target": "y",
+            "func": "sum",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  }
+]
