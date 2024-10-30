@@ -9,6 +9,12 @@
     sticky={null}
     type="main"
   >
+    <Image
+      id="image1"
+      heightType="fixed"
+      horizontalAlign="center"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyi0K_FxR0wFKEN0a48mydafOvX2kQhbwEug&s"
+    />
     <Text
       id="text1"
       horizontalAlign="center"
@@ -33,12 +39,6 @@
       }}
       value="### # Fraudulent Returns for Selected Period: {{ potentialFraudReturns.value }}"
       verticalAlign="center"
-    />
-    <Image
-      id="image1"
-      heightType="fixed"
-      horizontalAlign="center"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyi0K_FxR0wFKEN0a48mydafOvX2kQhbwEug&s"
     />
     <DateRange
       id="dateRange1"
@@ -351,5 +351,23 @@
       yAxisTitle="Price of Return"
     />
     <TextInput id="textInput1" labelPosition="top" placeholder="Enter value" />
+    <Button id="button1" text="Button" />
+    <Container
+      id="container1"
+      footerPadding="4px 12px"
+      headerPadding="4px 12px"
+      padding="12px"
+      showBody={true}
+      showHeader={true}
+    >
+      <Header>
+        <Text
+          id="containerTitle1"
+          value="#### Container title"
+          verticalAlign="center"
+        />
+      </Header>
+      <View id="e7b7c" viewKey="View 1" />
+    </Container>
   </Frame>
 </App>
