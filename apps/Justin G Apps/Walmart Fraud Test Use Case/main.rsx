@@ -95,13 +95,15 @@
       clearChangesetOnSave={true}
       data="{{ filter.data }}"
       defaultFilters={{
-        0: {
-          ordered: [
-            { columnId: "" },
-            { operator: "includes" },
-            { value: "" },
-            { id: "da504" },
-          ],
+        map: {
+          0: {
+            ordered: [
+              { columnId: "" },
+              { operator: "includes" },
+              { value: "" },
+              { id: "da504" },
+            ],
+          },
         },
       }}
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
@@ -127,7 +129,7 @@
         id="e942d"
         alignment="left"
         format="tag"
-        formatOptions={{ automaticColors: true }}
+        formatOptions={{ map: { automaticColors: true } }}
         groupAggregationMode="none"
         key="transaction_type"
         label="Transaction type"
@@ -139,7 +141,7 @@
       <Column
         id="a2c43"
         alignment="right"
-        editableOptions={{ showStepper: true }}
+        editableOptions={{ map: { showStepper: true } }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -152,7 +154,7 @@
       <Column
         id="d2543"
         alignment="right"
-        editableOptions={{ showStepper: true }}
+        editableOptions={{ map: { showStepper: true } }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -165,7 +167,7 @@
       <Column
         id="b1188"
         alignment="right"
-        editableOptions={{ showStepper: true }}
+        editableOptions={{ map: { showStepper: true } }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -190,7 +192,7 @@
         id="e42ee"
         alignment="left"
         format="tag"
-        formatOptions={{ automaticColors: true }}
+        formatOptions={{ map: { automaticColors: true } }}
         groupAggregationMode="none"
         key="store_location"
         label="Store location"
@@ -202,7 +204,7 @@
       <Column
         id="e94c4"
         alignment="right"
-        editableOptions={{ showStepper: true }}
+        editableOptions={{ map: { showStepper: true } }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -215,7 +217,7 @@
       <Column
         id="39f11"
         alignment="right"
-        editableOptions={{ showStepper: true }}
+        editableOptions={{ map: { showStepper: true } }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -228,7 +230,7 @@
       <Column
         id="78388"
         alignment="right"
-        editableOptions={{ showStepper: true }}
+        editableOptions={{ map: { showStepper: true } }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
