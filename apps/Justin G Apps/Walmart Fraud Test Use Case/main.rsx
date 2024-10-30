@@ -95,15 +95,13 @@
       clearChangesetOnSave={true}
       data="{{ filter.data }}"
       defaultFilters={{
-        map: {
-          0: {
-            ordered: [
-              { columnId: "" },
-              { operator: "includes" },
-              { value: "" },
-              { id: "da504" },
-            ],
-          },
+        0: {
+          ordered: [
+            { columnId: "" },
+            { operator: "includes" },
+            { value: "" },
+            { id: "da504" },
+          ],
         },
       }}
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
@@ -129,7 +127,7 @@
         id="e942d"
         alignment="left"
         format="tag"
-        formatOptions={{ map: { automaticColors: true } }}
+        formatOptions={{ automaticColors: true }}
         groupAggregationMode="none"
         key="transaction_type"
         label="Transaction type"
@@ -141,7 +139,7 @@
       <Column
         id="a2c43"
         alignment="right"
-        editableOptions={{ map: { showStepper: true } }}
+        editableOptions={{ showStepper: true }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -154,7 +152,7 @@
       <Column
         id="d2543"
         alignment="right"
-        editableOptions={{ map: { showStepper: true } }}
+        editableOptions={{ showStepper: true }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -167,7 +165,7 @@
       <Column
         id="b1188"
         alignment="right"
-        editableOptions={{ map: { showStepper: true } }}
+        editableOptions={{ showStepper: true }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -192,7 +190,7 @@
         id="e42ee"
         alignment="left"
         format="tag"
-        formatOptions={{ map: { automaticColors: true } }}
+        formatOptions={{ automaticColors: true }}
         groupAggregationMode="none"
         key="store_location"
         label="Store location"
@@ -204,7 +202,7 @@
       <Column
         id="e94c4"
         alignment="right"
-        editableOptions={{ map: { showStepper: true } }}
+        editableOptions={{ showStepper: true }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -217,7 +215,7 @@
       <Column
         id="39f11"
         alignment="right"
-        editableOptions={{ map: { showStepper: true } }}
+        editableOptions={{ showStepper: true }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -230,7 +228,7 @@
       <Column
         id="78388"
         alignment="right"
-        editableOptions={{ map: { showStepper: true } }}
+        editableOptions={{ showStepper: true }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
@@ -370,6 +368,200 @@
         />
       </Header>
       <View id="e7b7c" viewKey="View 1" />
+      <View
+        id="e4864"
+        disabled={false}
+        hidden={false}
+        iconPosition="left"
+        viewKey="View 2"
+      />
     </Container>
+    <Table
+      id="table2"
+      cellSelection="none"
+      clearChangesetOnSave={true}
+      data="{{ getTransactions.data }}"
+      defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
+      emptyMessage="No rows found"
+      enableSaveActions={true}
+      primaryKeyColumnId="d16ef"
+      showBorder={true}
+      showFooter={true}
+      showHeader={true}
+      toolbarPosition="bottom"
+    >
+      <Column
+        id="d16ef"
+        alignment="right"
+        editableOptions={{ showStepper: true }}
+        format="decimal"
+        formatOptions={{ showSeparators: true, notation: "standard" }}
+        groupAggregationMode="sum"
+        key="id"
+        label="ID"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="edb25"
+        alignment="right"
+        editableOptions={{ showStepper: true }}
+        format="decimal"
+        formatOptions={{ showSeparators: true, notation: "standard" }}
+        groupAggregationMode="sum"
+        key="customer_id"
+        label="Customer ID"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="a3c36"
+        alignment="right"
+        editableOptions={{ showStepper: true }}
+        format="decimal"
+        formatOptions={{ showSeparators: true, notation: "standard" }}
+        groupAggregationMode="sum"
+        key="transaction_id"
+        label="Transaction ID"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="4a591"
+        alignment="left"
+        format="string"
+        groupAggregationMode="none"
+        key="product_id"
+        label="Product ID"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="b8333"
+        alignment="right"
+        editableOptions={{ showStepper: true }}
+        format="decimal"
+        formatOptions={{ showSeparators: true, notation: "standard" }}
+        groupAggregationMode="sum"
+        key="quantity"
+        label="Quantity"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="e209c"
+        alignment="right"
+        editableOptions={{ showStepper: true }}
+        format="decimal"
+        formatOptions={{ showSeparators: true, notation: "standard" }}
+        groupAggregationMode="sum"
+        key="price_per_unit"
+        label="Price per unit"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="fc774"
+        alignment="right"
+        editableOptions={{ showStepper: true }}
+        format="decimal"
+        formatOptions={{ showSeparators: true, notation: "standard" }}
+        groupAggregationMode="sum"
+        key="total_price"
+        label="Total price"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="7710a"
+        alignment="left"
+        format="datetime"
+        groupAggregationMode="none"
+        key="transaction_date"
+        label="Transaction date"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="082b7"
+        alignment="left"
+        format="tag"
+        formatOptions={{ automaticColors: true }}
+        groupAggregationMode="none"
+        key="store_location"
+        label="Store location"
+        placeholder="Select option"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+        valueOverride="{{ _.startCase(item) }}"
+      />
+      <Column
+        id="f5514"
+        alignment="left"
+        format="tag"
+        formatOptions={{ automaticColors: true }}
+        groupAggregationMode="none"
+        key="transaction_type"
+        label="Transaction type"
+        placeholder="Select option"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+        valueOverride="{{ _.startCase(item) }}"
+      />
+      <ToolbarButton
+        id="1a"
+        icon="bold/interface-text-formatting-filter-2"
+        label="Filter"
+        type="filter"
+      />
+      <ToolbarButton
+        id="3c"
+        icon="bold/interface-download-button-2"
+        label="Download"
+        type="custom"
+      >
+        <Event
+          event="clickToolbar"
+          method="exportData"
+          pluginId="table2"
+          type="widget"
+          waitMs="0"
+          waitType="debounce"
+        />
+      </ToolbarButton>
+      <ToolbarButton
+        id="4d"
+        icon="bold/interface-arrows-round-left"
+        label="Refresh"
+        type="custom"
+      >
+        <Event
+          event="clickToolbar"
+          method="refresh"
+          pluginId="table2"
+          type="widget"
+          waitMs="0"
+          waitType="debounce"
+        />
+      </ToolbarButton>
+    </Table>
   </Frame>
 </App>
