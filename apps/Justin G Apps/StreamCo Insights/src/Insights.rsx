@@ -58,20 +58,20 @@
   />
   <Include src="./sidebar1.rsx" />
   <Frame
-    id="$main2"
-    enableFullBleed={false}
-    isHiddenOnDesktop={false}
-    isHiddenOnMobile={false}
-    padding="0"
-    sticky={null}
-    type="main"
-  />
-  <Frame
     id="$main"
     enableFullBleed={false}
     isHiddenOnDesktop={false}
     isHiddenOnMobile={false}
     padding="8px 12px"
+    sticky={null}
+    type="main"
+  />
+  <Frame
+    id="$main2"
+    enableFullBleed={false}
+    isHiddenOnDesktop={false}
+    isHiddenOnMobile={false}
+    padding="0"
     sticky={null}
     type="main"
   >
@@ -511,86 +511,6 @@
         />
       </Header>
       <View id="85094" viewKey="View 1">
-        <Chart
-          id="sessionsChart"
-          barGap="0.2"
-          barMode="overlay"
-          legendPosition="bottom"
-          selectedPoints="[]"
-          stackedBarTotalsDataLabelPosition="none"
-          title="Sessions Over Time"
-          xAxisRangeMax=""
-          xAxisRangeMin=""
-          xAxisScale="date"
-          xAxisShowTickLabels={true}
-          xAxisTickFormatMode="gui"
-          yAxis2LineWidth={1}
-          yAxis2RangeMax=""
-          yAxis2RangeMin=""
-          yAxis2ShowTickLabels={true}
-          yAxis2TickFormatMode="gui"
-          yAxisGrid={true}
-          yAxisRangeMax=""
-          yAxisRangeMin=""
-          yAxisShowLine={true}
-          yAxisShowTickLabels={true}
-          yAxisTickFormatMode="gui"
-          yAxisTitle="Sessions"
-        >
-          <Series
-            id="1"
-            aggregationType="max"
-            colorArray={{ array: ["{{ theme.danger }}"] }}
-            colorArrayDropDown={{ array: ["{{ theme.danger }}"] }}
-            colorInputMode="colorArrayDropDown"
-            connectorLineColor="#000000"
-            dataLabelPosition="none"
-            datasource="{{ filter.data }}"
-            datasourceMode="source"
-            decreasingBorderColor="{{ theme.danger }}"
-            decreasingColor="{{ theme.danger }}"
-            filteredGroups={null}
-            filteredGroupsMode="source"
-            gradientColorArray={{
-              array: [
-                { array: ["0.0", "{{ theme.success }}"] },
-                { array: ["1.0", "{{ theme.primary }}"] },
-              ],
-            }}
-            groupBy={{ array: ["content_type"] }}
-            groupByDropdownType="source"
-            groupByStyles={{}}
-            hoverTemplate="<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>"
-            hoverTemplateMode="source"
-            increasingBorderColor="{{ theme.success }}"
-            increasingColor="{{ theme.success }}"
-            lineColor="{{ theme.primary }}"
-            lineDash="solid"
-            lineShape="linear"
-            lineUnderFillMode="none"
-            lineWidth={2}
-            markerBorderColor={null}
-            markerBorderWidth={0}
-            markerColor="{{ theme.danger }}"
-            markerSize={6}
-            markerSymbol="circle"
-            name="Sessions"
-            showMarkers={false}
-            textTemplate={null}
-            textTemplateMode="manual"
-            type="bar"
-            waterfallBase={0}
-            waterfallMeasures={null}
-            waterfallMeasuresMode="source"
-            xData="{{ formatDataAsObject(filter.data).timestamp }}"
-            xDataMode="source"
-            yAxis="y"
-            yData="{{ formatDataAsObject(filter.data).total_sessions }}"
-            yDataMode="source"
-            zData={null}
-            zDataMode="manual"
-          />
-        </Chart>
         <PlotlyChart
           id="regionPieChart"
           chartType="pie"
@@ -6757,6 +6677,86 @@
           xAxis="{{formatDataAsObject(filter.data)['user_region']}}"
           xAxisDropdown="user_region"
         />
+        <Chart
+          id="sessionsChart"
+          barGap="0.2"
+          barMode="overlay"
+          legendPosition="bottom"
+          selectedPoints="[]"
+          stackedBarTotalsDataLabelPosition="none"
+          title="Sessions Over Time"
+          xAxisRangeMax=""
+          xAxisRangeMin=""
+          xAxisScale="date"
+          xAxisShowTickLabels={true}
+          xAxisTickFormatMode="gui"
+          yAxis2LineWidth={1}
+          yAxis2RangeMax=""
+          yAxis2RangeMin=""
+          yAxis2ShowTickLabels={true}
+          yAxis2TickFormatMode="gui"
+          yAxisGrid={true}
+          yAxisRangeMax=""
+          yAxisRangeMin=""
+          yAxisShowLine={true}
+          yAxisShowTickLabels={true}
+          yAxisTickFormatMode="gui"
+          yAxisTitle="Sessions"
+        >
+          <Series
+            id="1"
+            aggregationType="max"
+            colorArray={{ array: ["{{ theme.danger }}"] }}
+            colorArrayDropDown={{ array: ["{{ theme.danger }}"] }}
+            colorInputMode="colorArrayDropDown"
+            connectorLineColor="#000000"
+            dataLabelPosition="none"
+            datasource="{{ filter.data }}"
+            datasourceMode="source"
+            decreasingBorderColor="{{ theme.danger }}"
+            decreasingColor="{{ theme.danger }}"
+            filteredGroups={null}
+            filteredGroupsMode="source"
+            gradientColorArray={{
+              array: [
+                { array: ["0.0", "{{ theme.success }}"] },
+                { array: ["1.0", "{{ theme.primary }}"] },
+              ],
+            }}
+            groupBy={{ array: ["content_type"] }}
+            groupByDropdownType="source"
+            groupByStyles={{}}
+            hoverTemplate="<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>"
+            hoverTemplateMode="source"
+            increasingBorderColor="{{ theme.success }}"
+            increasingColor="{{ theme.success }}"
+            lineColor="{{ theme.primary }}"
+            lineDash="solid"
+            lineShape="linear"
+            lineUnderFillMode="none"
+            lineWidth={2}
+            markerBorderColor={null}
+            markerBorderWidth={0}
+            markerColor="{{ theme.danger }}"
+            markerSize={6}
+            markerSymbol="circle"
+            name="Sessions"
+            showMarkers={false}
+            textTemplate={null}
+            textTemplateMode="manual"
+            type="bar"
+            waterfallBase={0}
+            waterfallMeasures={null}
+            waterfallMeasuresMode="source"
+            xData="{{ formatDataAsObject(filter.data).timestamp }}"
+            xDataMode="source"
+            yAxis="y"
+            yData="{{ formatDataAsObject(filter.data).total_sessions }}"
+            yDataMode="source"
+            zData={null}
+            zDataMode="manual"
+          />
+        </Chart>
         <Chart
           id="watchTimeDeviceChart"
           barMode="group"

@@ -141,7 +141,6 @@
   "emailPreviewText": {
     "container": "container2",
     "subcontainer": "e5092",
-    "row": 0,
     "height": 6.2,
     "width": 12,
     "stackPosition": {
@@ -175,7 +174,6 @@
     "width": 12
   },
   "metricsStack": {
-    "row": 0,
     "height": 2.6,
     "width": 12
   },
@@ -200,7 +198,6 @@
   "regionPieChart": {
     "container": "container1",
     "subcontainer": "85094",
-    "row": 0,
     "height": 5.2,
     "width": 4,
     "stackPosition": {
@@ -228,7 +225,6 @@
   },
   "stack4": {
     "subcontainer": "sidebarFrame1",
-    "row": 0,
     "height": 20.2,
     "width": 1,
     "stackPosition": {
