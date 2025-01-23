@@ -277,7 +277,7 @@
         <Button
           id="approvalFormSubmit"
           allowWrap={true}
-          style={{ ordered: [{ background: "#0f8c58" }] }}
+          style={{ ordered: [{ background: "#0fa366" }] }}
           submit={true}
           submitTargetId="approvalForm"
           text="Submit"

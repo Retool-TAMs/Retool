@@ -38,7 +38,6 @@
     textLight="#ffffff"
     warning="#cd6f00"
   />
-  <Include src="./src/Insights.rsx" />
   <CustomAppTheme
     id="$appTheme2"
     _migrated={true}
@@ -77,6 +76,7 @@
     textLight="#ffffff"
     warning="#cd6f00"
   />
+  <Include src="./src/Insights.rsx" />
   <Include src="./src/Reports.rsx" />
   <Include src="./src/Settings.rsx" />
   <Include src="./header.rsx" />
