@@ -1,0 +1,311 @@
+{
+  "appTitle": {
+    "subcontainer": "header",
+    "height": 1,
+    "width": 2
+  },
+  "approvalForm": {
+    "subcontainer": "modalFrame1",
+    "row": 1,
+    "height": 3,
+    "width": 5,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "approvalFormCheckbox": {
+    "container": "approvalForm",
+    "height": 0.6,
+    "width": 11
+  },
+  "approvalFormSubmit": {
+    "container": "approvalForm",
+    "rowGroup": "footer",
+    "col": 2,
+    "height": 1,
+    "width": 8
+  },
+  "avatar1": {
+    "rowGroup": "footer",
+    "subcontainer": "sidebarFrame1",
+    "height": 0.2,
+    "width": 1
+  },
+  "avgWatchStat": {
+    "type": "stack",
+    "container": "metricsStack",
+    "subcontainer": "8cfe8",
+    "height": 0.8,
+    "width": 1,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 112.25,
+        "height": 72
+      }
+    }
+  },
+  "container1": {
+    "row": 3.8,
+    "height": 11,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "container2": {
+    "subcontainer": "modalFrame1",
+    "row": 1,
+    "col": 5,
+    "height": 8.6,
+    "width": 7,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle2": {
+    "container": "container2",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "contentCompletionStat": {
+    "type": "stack",
+    "container": "metricsStack",
+    "subcontainer": "8cfe8",
+    "col": 3,
+    "height": 0.8,
+    "width": 2,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 157.41666666666669,
+        "height": 72
+      }
+    }
+  },
+  "contentTypeSelect": {
+    "type": "stack",
+    "container": "stack4",
+    "subcontainer": "73156",
+    "row": 21.8,
+    "height": 0.2,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 175,
+        "height": 8
+      }
+    }
+  },
+  "dateRange1": {
+    "type": "stack",
+    "container": "stack4",
+    "subcontainer": "73156",
+    "height": 0.2,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fill",
+        "width": 303,
+        "height": 8
+      }
+    }
+  },
+  "emailPreviewText": {
+    "container": "container2",
+    "subcontainer": "e5092",
+    "row": 0,
+    "height": 6.2,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "formTitle1": {
+    "container": "approvalForm",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "interventionsButton": {
+    "subcontainer": "header",
+    "col": 9,
+    "height": 1
+  },
+  "interventionsTable": {
+    "subcontainer": "modalFrame1",
+    "height": 1,
+    "width": 12
+  },
+  "keyValue1": {
+    "container": "userInsightsTable",
+    "height": 8.6,
+    "width": 12
+  },
+  "metricsStack": {
+    "row": 0,
+    "height": 2.6,
+    "width": 12
+  },
+  "modalCloseButton1": {
+    "rowGroup": "header",
+    "subcontainer": "modalFrame1",
+    "col": 9,
+    "height": 1
+  },
+  "modalTitle1": {
+    "rowGroup": "header",
+    "subcontainer": "modalFrame1",
+    "height": 0.6,
+    "width": 9
+  },
+  "navigation1": {
+    "subcontainer": "header",
+    "col": 2,
+    "height": 1,
+    "width": 4
+  },
+  "regionPieChart": {
+    "container": "container1",
+    "subcontainer": "85094",
+    "row": 0,
+    "height": 5.2,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "sessionsChart": {
+    "container": "container1",
+    "subcontainer": "85094",
+    "col": 4,
+    "width": 8,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "stack4": {
+    "subcontainer": "sidebarFrame1",
+    "row": 0,
+    "height": 20.2,
+    "width": 1,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "userAgeSelect": {
+    "type": "stack",
+    "container": "stack4",
+    "subcontainer": "73156",
+    "row": 21.4,
+    "height": 0.2,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 3,
+        "widthType": "fixed",
+        "width": 175,
+        "height": 8
+      }
+    }
+  },
+  "userInsightsTable": {
+    "row": 2.8,
+    "height": 1,
+    "width": 12
+  },
+  "userRegionSelect": {
+    "type": "stack",
+    "container": "stack4",
+    "subcontainer": "73156",
+    "row": 21.6,
+    "height": 0.2,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 176,
+        "height": 8
+      }
+    }
+  },
+  "watchTimeDeviceChart": {
+    "container": "container1",
+    "subcontainer": "85094",
+    "row": 5.6,
+    "height": 4.8,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "watchTotalStat": {
+    "type": "stack",
+    "container": "metricsStack",
+    "subcontainer": "8cfe8",
+    "col": 1,
+    "height": 0.8,
+    "width": 2,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 110.41666666666669,
+        "height": 72
+      }
+    }
+  }
+}

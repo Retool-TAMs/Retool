@@ -1,0 +1,54 @@
+<GlobalFunctions>
+  <RetoolUserActionQuery
+    id="getUserTasks"
+    _componentId={null}
+    actionCategory="userTask"
+    actionType="get_tasks"
+    fromAppUuid=""
+    isHidden={false}
+    outputType="single"
+    resourceName="RetoolUserAction"
+    runWhenPageLoads="true"
+    selectedStatuses={'["pending"]'}
+    selectedUserTaskDefinitionIds={'["6c3bca0c-fe44-4b7c-bd1b-4656aad958b3"]'}
+    selectedWorkflowIds={'["25d83ccd-422d-4a9e-a151-1bc9fbf68547"]'}
+    userTaskInstanceIds="[]"
+  />
+  <RetoolUserActionQuery
+    id="getSingleUserTask"
+    _componentId={null}
+    actionCategory="userTask"
+    actionType="get_task"
+    fromAppUuid=""
+    isHidden={false}
+    outputType="single"
+    resourceName="RetoolUserAction"
+    runWhenPageLoads="false"
+    userTaskInstanceIds="[]"
+  />
+  <RetoolUserActionQuery
+    id="submitUserTask"
+    _componentId={null}
+    actionCategory="userTask"
+    actionType="complete_task"
+    fromAppUuid=""
+    isHidden={false}
+    isMultiplayerEdited={false}
+    outputPayload={'{ "approved": {{ approvalFormCheckbox.value }} }'}
+    outputType="single"
+    resourceName="RetoolUserAction"
+    runWhenPageLoads="false"
+    userTaskInstanceId="{{ interventionsTable.selectedRow.id }}"
+    userTaskInstanceIds="[]"
+  >
+    <Event
+      event="success"
+      method="clearSelection"
+      params={{ ordered: [] }}
+      pluginId="interventionsTable"
+      type="widget"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </RetoolUserActionQuery>
+</GlobalFunctions>
