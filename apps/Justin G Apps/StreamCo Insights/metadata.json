@@ -1,0 +1,33 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "3101e200-b350-11ef-80e1-ab7d150c450f",
+  "appTemplate": {
+    "appThemeId": "custom",
+    "pageCodeFolders": {
+      "object": {
+        "page1": {
+          "array": []
+        },
+        "page2": {
+          "array": []
+        },
+        "page3": {
+          "array": []
+        },
+        "Insights": {
+          "array": []
+        },
+        "Reports": {
+          "array": []
+        },
+        "Settings": {
+          "array": []
+        }
+      }
+    },
+    "rootScreen": "Insights",
+    "version": "3.139.0",
+    "experimentalDataTabEnabled": true
+  }
+}
