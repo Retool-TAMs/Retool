@@ -77,6 +77,7 @@
       <View id="96842" viewKey="View 1">
         <Text
           id="text1"
+          style={{ ordered: [{ background: "rgb(164, 44, 44)" }] }}
           value="### Marketing Analytics Tool"
           verticalAlign="center"
         />
@@ -152,7 +153,7 @@
             id="bdf2a"
             alignment="right"
             editable={false}
-            editableOptions={{ map: { showStepper: true } }}
+            editableOptions={{ showStepper: true }}
             format="decimal"
             formatOptions={{ showSeparators: true, notation: "standard" }}
             groupAggregationMode="sum"
@@ -168,7 +169,7 @@
             id="6b865"
             alignment="left"
             format="tag"
-            formatOptions={{ map: { automaticColors: true } }}
+            formatOptions={{ automaticColors: true }}
             groupAggregationMode="none"
             key="user_region"
             label="User region"
@@ -182,7 +183,7 @@
             id="32936"
             alignment="left"
             format="button"
-            formatOptions={{ map: { variant: "solid" } }}
+            formatOptions={{ variant: "solid" }}
             groupAggregationMode="none"
             label="Action"
             placeholder="Enter value"
@@ -217,7 +218,7 @@
           <Column
             id="be231"
             alignment="right"
-            editableOptions={{ map: { showStepper: true } }}
+            editableOptions={{ showStepper: true }}
             format="decimal"
             formatOptions={{ showSeparators: true, notation: "standard" }}
             groupAggregationMode="sum"
@@ -232,7 +233,7 @@
           <Column
             id="86ea5"
             alignment="right"
-            editableOptions={{ map: { showStepper: true } }}
+            editableOptions={{ showStepper: true }}
             format="decimal"
             formatOptions={{ showSeparators: true, notation: "standard" }}
             groupAggregationMode="sum"
@@ -261,7 +262,7 @@
             id="cbea2"
             alignment="left"
             format="tag"
-            formatOptions={{ map: { automaticColors: true } }}
+            formatOptions={{ automaticColors: true }}
             groupAggregationMode="none"
             key="content_type"
             label="Content type"
@@ -287,7 +288,7 @@
             id="b3ee6"
             alignment="left"
             format="tag"
-            formatOptions={{ map: { automaticColors: true } }}
+            formatOptions={{ automaticColors: true }}
             groupAggregationMode="none"
             key="device_type"
             label="Device type"
@@ -301,7 +302,7 @@
             id="f82f7"
             alignment="left"
             format="tag"
-            formatOptions={{ map: { automaticColors: true } }}
+            formatOptions={{ automaticColors: true }}
             groupAggregationMode="none"
             key="subscription_type"
             label="Subscription type"
@@ -315,7 +316,7 @@
             id="bba01"
             alignment="left"
             format="tag"
-            formatOptions={{ map: { automaticColors: true } }}
+            formatOptions={{ automaticColors: true }}
             groupAggregationMode="none"
             key="engagement_level"
             label="Engagement level"
@@ -328,7 +329,7 @@
           <Column
             id="a5264"
             alignment="right"
-            editableOptions={{ map: { showStepper: true } }}
+            editableOptions={{ showStepper: true }}
             format="decimal"
             formatOptions={{ showSeparators: true, notation: "standard" }}
             groupAggregationMode="sum"
@@ -342,7 +343,7 @@
           <Column
             id="7a63a"
             alignment="right"
-            editableOptions={{ map: { showStepper: true } }}
+            editableOptions={{ showStepper: true }}
             format="decimal"
             formatOptions={{ showSeparators: true, notation: "standard" }}
             groupAggregationMode="sum"
@@ -356,7 +357,7 @@
           <Column
             id="51c6e"
             alignment="right"
-            editableOptions={{ map: { showStepper: true } }}
+            editableOptions={{ showStepper: true }}
             format="decimal"
             formatOptions={{ showSeparators: true, notation: "standard" }}
             groupAggregationMode="sum"
@@ -371,7 +372,7 @@
             id="78801"
             alignment="left"
             format="tag"
-            formatOptions={{ map: { automaticColors: true } }}
+            formatOptions={{ automaticColors: true }}
             groupAggregationMode="none"
             key="preferred_genre"
             label="Preferred genre"
@@ -385,7 +386,7 @@
             id="d3591"
             alignment="left"
             format="tag"
-            formatOptions={{ map: { automaticColors: true } }}
+            formatOptions={{ automaticColors: true }}
             groupAggregationMode="none"
             key="favorite_actor"
             label="Favorite actor"
@@ -411,7 +412,7 @@
             id="f9c37"
             alignment="left"
             format="tag"
-            formatOptions={{ map: { automaticColors: true } }}
+            formatOptions={{ automaticColors: true }}
             groupAggregationMode="none"
             key="is_subscriber"
             label="Is subscriber"
@@ -425,7 +426,7 @@
             id="157e4"
             alignment="left"
             format="tag"
-            formatOptions={{ map: { automaticColors: true } }}
+            formatOptions={{ automaticColors: true }}
             groupAggregationMode="none"
             key="risk_level"
             label="Risk level"
@@ -451,7 +452,7 @@
             id="ecbd4"
             alignment="left"
             format="link"
-            formatOptions={{ map: { showUnderline: "hover" } }}
+            formatOptions={{ showUnderline: "hover" }}
             groupAggregationMode="none"
             key="email"
             label="Email"
