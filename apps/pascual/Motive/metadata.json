@@ -1,0 +1,39 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "8ddd30de-eef0-11ef-97cf-13db67797024",
+  "appTemplate": {
+    "pageCodeFolders": {
+      "object": {
+        "page1": {
+          "array": []
+        },
+        "page2": {
+          "array": []
+        },
+        "insights": {
+          "array": ["resources", "filters", "metrics", "actions"]
+        },
+        "reports": {
+          "array": []
+        },
+        "settings": {
+          "array": []
+        }
+      }
+    },
+    "rootScreen": "insights",
+    "appTesting": {
+      "object": {
+        "testSuites": {
+          "array": []
+        },
+        "tests": {
+          "object": {}
+        }
+      }
+    },
+    "version": "3.114.1",
+    "experimentalDataTabEnabled": true
+  }
+}
