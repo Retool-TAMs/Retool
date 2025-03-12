@@ -11,7 +11,10 @@
   "editPrivilege": null,
   "options": {
     "baseURL": "https://api.sampleapis.com/coffee",
-    "headers": [["", ""]],
+    "headers": [
+      ["new_header", "header_value"],
+      ["sanitized_header", "sanitized_header_value"]
+    ],
     "urlparams": [["", ""]],
     "auth0_domain": "",
     "bearer_token": "",
@@ -42,6 +45,8 @@
     "oauth1_realm_parameter": "",
     "oauth1_signature_method": "HMAC-SHA1",
     "oauth2_access_token_url": "",
+    "sanitizeCustomHeadersList": ["sanitized_header"],
+    "sanitizeCustomHeadersEnabled": true,
     "digest_server_auth_header_response": ""
   },
   "environment": "production",
