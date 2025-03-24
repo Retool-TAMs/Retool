@@ -36,7 +36,7 @@
         { fontSize: "h5Font" },
         { fontWeight: "h5Font" },
         { fontFamily: "h5Font" },
-        { color: "rgba(127, 8, 189, 1)" },
+        { color: "rgba(28, 7, 189, 1)" },
         { highlightText: "#1c07bd" },
       ],
     }}
