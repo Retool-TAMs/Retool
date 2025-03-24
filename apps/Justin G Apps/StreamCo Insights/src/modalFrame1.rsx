@@ -19,7 +19,6 @@
     />
     <Button
       id="modalCloseButton1"
-      allowWrap={true}
       ariaLabel="Close"
       horizontalAlign="right"
       iconBefore="bold/interface-delete-1"
@@ -48,6 +47,7 @@
       enableSaveActions={true}
       heightType="auto"
       primaryKeyColumnId="82304"
+      rowHeight="small"
       showBorder={true}
       showFooter={true}
       showHeader={true}
@@ -276,7 +276,6 @@
       <Footer>
         <Button
           id="approvalFormSubmit"
-          allowWrap={true}
           style={{ ordered: [{ background: "#0fa366" }] }}
           submit={true}
           submitTargetId="approvalForm"

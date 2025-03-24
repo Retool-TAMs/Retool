@@ -92,8 +92,6 @@
   <Footer>
     <Avatar
       id="avatar1"
-      clickable={false}
-      events={{ ordered: [] }}
       fallback="{{ current_user.fullName }}"
       imageSize={32}
       label="{{ current_user.fullName }}"
