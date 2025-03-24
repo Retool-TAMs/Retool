@@ -7,7 +7,6 @@
 >
   <JavascriptQuery
     id="filter"
-    isHidden={false}
     isMultiplayerEdited={false}
     notificationDuration={4.5}
     query={include("../lib/filter.js", "string")}
@@ -17,7 +16,6 @@
   <SqlQueryUnified
     id="getUserInsights"
     enableTransformer={true}
-    isHidden={false}
     query={include("../lib/getUserInsights.sql", "string")}
     resourceDisplayName="retool_db"
     resourceName="b32a9280-ef49-4b13-a3bd-64d1ed97c8a6"
@@ -48,7 +46,6 @@
   />
   <SqlQueryUnified
     id="query6"
-    isHidden={false}
     notificationDuration={4.5}
     resourceDisplayName="retool_db"
     resourceName="b32a9280-ef49-4b13-a3bd-64d1ed97c8a6"
