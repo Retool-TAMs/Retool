@@ -30,5 +30,6 @@
       <Option id="57eeb" value="178e931e-7f6d-494f-aeb2-26333ba8b91e" />
     </Select>
     <JSONExplorer id="jsonExplorer1" value="{{ query1.data }}" />
+    <Button id="button3" text="Button" />
   </Frame>
 </App>
