@@ -1,5 +1,6 @@
 <Screen
   id="reports"
+  _customShortcuts={[]}
   _hashParams={[]}
   _searchParams={[]}
   title={null}
@@ -13,7 +14,7 @@
     editorMode="gui"
     notificationDuration={4.5}
     resourceDisplayName="retool_db"
-    resourceName="b32a9280-ef49-4b13-a3bd-64d1ed97c8a6"
+    resourceName="9431eee3-e7f1-4d8c-98ca-0fdeffc491b9"
     runWhenModelUpdates={false}
     showSuccessToaster={false}
     tableName="analytics_dash_updated"

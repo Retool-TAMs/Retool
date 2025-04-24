@@ -298,6 +298,12 @@
     "height": 8,
     "width": 12
   },
+  "table3": {
+    "row": 16,
+    "col": 6,
+    "height": 8,
+    "width": 6
+  },
   "text1": {
     "container": "headerContainer",
     "subcontainer": "96842",
