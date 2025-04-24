@@ -1,5 +1,6 @@
 <Screen
   id="settings"
+  _customShortcuts={[]}
   _hashParams={[]}
   _searchParams={[]}
   title={null}
