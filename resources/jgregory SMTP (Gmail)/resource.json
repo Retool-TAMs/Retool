@@ -1,0 +1,23 @@
+{
+  "type": "smtp",
+  "host": null,
+  "port": null,
+  "databaseName": null,
+  "databaseUsername": null,
+  "databasePassword": null,
+  "description": null,
+  "outboundRegion": null,
+  "ssl": null,
+  "editPrivilege": null,
+  "options": {
+    "host": "smtp.gmail.com",
+    "port": "465",
+    "password": "",
+    "username": "jgregory0328@gmail.com",
+    "authentication": "user_password"
+  },
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "c698edf9-c24d-46c1-a5bb-d15d72471845",
+  "toolscriptVersion": "1.0.0"
+}
