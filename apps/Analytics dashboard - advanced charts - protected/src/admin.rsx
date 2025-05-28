@@ -1,0 +1,25 @@
+<Screen
+  id="admin"
+  _customShortcuts={[]}
+  _hashParams={[]}
+  _searchParams={[]}
+  browserTitle=""
+  title={null}
+  urlSlug=""
+>
+  <JavascriptQuery
+    id="query1"
+    notificationDuration={4.5}
+    resourceName="JavascriptQuery"
+    showSuccessToaster={false}
+  />
+  <Frame
+    id="$main3"
+    enableFullBleed={false}
+    isHiddenOnDesktop={false}
+    isHiddenOnMobile={false}
+    padding="8px 12px"
+    sticky={null}
+    type="main"
+  />
+</Screen>
