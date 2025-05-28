@@ -1,0 +1,1 @@
+select * from analytics_dash_updated order by timestamp DESC
