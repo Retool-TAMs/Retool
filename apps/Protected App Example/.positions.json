@@ -20,5 +20,10 @@
     "col": 3,
     "height": 0.2,
     "width": 4
+  },
+  "text1": {
+    "row": 3.6,
+    "col": 4,
+    "height": 1
   }
 }
