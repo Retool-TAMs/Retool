@@ -31,7 +31,7 @@ template:
       hulunet_data_justin_gregory
     WHERE
       risk_level IN ('High', 'Medium')
-    LIMIT 5
+    LIMIT 10
   playgroundQueryUuid: ''
   playgroundQueryId: null
   error: null

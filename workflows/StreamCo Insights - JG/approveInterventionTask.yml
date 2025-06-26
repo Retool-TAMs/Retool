@@ -99,19 +99,19 @@ blockData:
       - 4
     adminUserAssignments:
       - 17
-    groupAssignmentNames:
-      - All Users
     inputsTemplateString: |-
       {
         review: loopDailyInterventions.data
       }
     adminGroupAssignments: []
-    adminGroupAssignmentNames: []
-    adminUserAssignmentEmails:
-      - jgregory@retool.com
+    groupAssignmentNames:
+      - All Users
     assigneesWithTextIdentifiers:
       - type: group
         name: All Users
+    adminGroupAssignmentNames: []
+    adminUserAssignmentEmails:
+      - jgregory@retool.com
   pluginId: approveInterventionTask
   blockType: asyncTask
   editorType: JavascriptQuery

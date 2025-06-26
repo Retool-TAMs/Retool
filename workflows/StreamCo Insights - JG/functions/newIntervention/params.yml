@@ -19,5 +19,5 @@ blockData:
     height: 607
   editorType: JavascriptQuery
   isMinimized: false
-  resourceName: webhook
+  resourceName: JavascriptQuery
   incomingOnSuccessEdges: []
