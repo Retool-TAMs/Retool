@@ -1,0 +1,163 @@
+id: newEmail
+type: datasource
+subtype: RetoolAIQuery
+resourceName: retool_ai
+resourceDisplayName: retool_ai
+template:
+  ordered:
+    - vectorNamespaceIds:
+        array: []
+    - vectorDynamicUrls: ''
+    - queryRefreshTime: ''
+    - allowedGroupIds:
+        array: []
+    - vectorActionNamespaceDynamicModeEnabled: false
+    - vectorCreateAndFetchDynamicModeEnabled: false
+    - streamResponse: true
+    - imageClassifierDynamicLabels: ''
+    - lastReceivedFromResourceAt: null
+    - vectorSemanticSearchString: ''
+    - queryDisabledMessage: ''
+    - customTemperature: '1'
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - vectorUrls:
+        array: []
+    - customSystemMessage: ''
+    - textExtractorDynamicLabels: ''
+    - imageExtractorLabels:
+        array: []
+    - query: ''
+    - playgroundQueryUuid: ''
+    - imageExtractorDynamicModeEnabled: false
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams:
+        array: []
+    - model: gpt-4o-mini
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - defaultModelInitialized: true
+    - providerId: retoolAIBuiltIn::openAI
+    - textClassifierLabels:
+        array: []
+    - textClassifierDynamicModeEnabled: false
+    - importedQueryInputs:
+        object: {}
+    - instruction: >-
+        Generate the just the email body to a customer for without a subject
+        line, greeting, or signature. Use proper grammar and separate
+        paragraphs.
+
+
+        The recommended intervention is {{ generate.data.recommendedIntervention
+        }}
+
+
+        The customer's favorite actor is {{ generate.data.favorite_actor }}
+
+
+        The customer's preferred genre is {{ generate.data.preferred_genre }}
+
+
+        If the recommended intervention is to offer a discount, provide discount
+        code a random discount code.
+
+
+        If the recommended intervention is to send a Thank you email, recommend
+        more content by their favorite actor and preferred genre
+    - isImported: false
+    - imageModel: dall-e-3
+    - showSuccessToaster: true
+    - fileUseDynamicSource: false
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata:
+        object: {}
+    - textClassifierDynamicLabels: ''
+    - queryRunTime: null
+    - changesetObject: ''
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - finished: null
+    - embeddingModel: text-embedding-ada-002
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - chatInput: ''
+    - rawData: null
+    - vectorNamespaceId: ''
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams:
+        array: []
+    - vectorDynamicNamespaces: ''
+    - enableErrorTransformer: false
+    - imageExtractorDynamicLabels: ''
+    - multimodalModel: gpt-4o
+    - showLatestVersionUpdatedWarning: false
+    - vectorActionDynamicNamespace: ''
+    - timestamp: 0
+    - evalType: script
+    - textExtractorDynamicModeEnabled: false
+    - action: textGeneration
+    - textExtractorLabels:
+        array: []
+    - importedQueryDefaults:
+        object: {}
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - fileSource: ''
+    - filterLabels:
+        array: []
+    - systemMessage: You are a helpful assistant
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - content: ''
+    - transformer: return data
+    - events:
+        array: []
+    - vectorAction: upsertDocument
+    - queryTimeout: '120000'
+    - workflowId: null
+    - vectorNamespacesDynamicModeEnabled: false
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - source: ''
+    - imageClassifierLabels:
+        array: []
+    - imageClassifierDynamicModeEnabled: false
+    - changesetIsObject: false
+    - vectorModeEnabled: false
+    - vectorNamespaceIdsFilters:
+        array: []
+    - providerName: openAI
+    - enableCaching: false
+    - allowedGroups:
+        array: []
+    - chatHistory: ''
+    - imageContent: ''
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2024-12-05T20:57:41.635Z
+blockData:
+  top: 48
+  left: 912
+  uuid: 63c30674-e35d-4882-904c-d8ad4b2d6499
+  pluginId: newEmail
+  blockType: default
+  editorType: RetoolAIQuery
+  resourceName: retool_ai
+  incomingOnSuccessEdges:
+    - 9d5fc0d5-2cbb-470d-bc38-00a8e6c81f08
