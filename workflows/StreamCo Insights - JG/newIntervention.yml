@@ -1,0 +1,107 @@
+id: newIntervention
+type: datasource
+subtype: RESTQuery
+resourceName: REST-WithoutResource
+template:
+  queryRefreshTime: ''
+  paginationLimit: ''
+  allowedGroupIds: []
+  streamResponse: false
+  body: ''
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: true
+  paginationPaginationField: ''
+  workflowRunExecutionType: sync
+  headers: ''
+  showFailureToaster: true
+  paginationEnabled: false
+  query: null
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  importedQueryInputs:
+    ordered: []
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  cookies: ''
+  metadata: null
+  queryRunTime: null
+  changesetObject: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  enableErrorTransformer: false
+  isHidden: false
+  showLatestVersionUpdatedWarning: false
+  paginationDataField: ''
+  timestamp: 0
+  importedQueryDefaults:
+    ordered: []
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  version: 2
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '10000'
+  workflowId: null
+  requireConfirmation: false
+  type: GET
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  bodyType: none
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2024-12-03T22:54:02.375Z
+blockData:
+  top: 40
+  left: 40
+  uuid: f85f178c-2a0f-4e88-aad3-1565d506f0bf
+  options:
+    subflowId: e21b62ca-7b75-4873-8a1b-9cb839e90bc7
+    parameters:
+      - id: c17ab61e-4053-4302-81a0-b973b58909c2
+        name: getSessions
+        exampleValue: >-
+          {"id":1,"user_id":"78049495-96a9-43ad-b83c-0f06017034ef","user_age":57,"watch_time":252,"content_id":"735e52a9-c0cd-4eee-b630-ce579290f8bb","content_type":"Live
+          Event","timestamp":"2024-08-31T14:43:59.902Z","user_region":"North
+          America","device_type":"Smart
+          TV","subscription_type":"Standard","engagement_level":"Low","total_sessions":68,"avg_session_duration":20,"total_watch_time":4183,"preferred_genre":"Sci
+          Fi","favorite_actor":"Leonardo Di
+          Caprio","last_login_date":"2024-10-04T14:16:34.381Z","is_subscriber":true,"risk_level":"High","recommended_intervention":"Offer
+          discount on Premium subscription","email":null}
+  pluginId: newIntervention
+  blockType: function
+  editorType: RESTQuery
+  resourceName: REST-WithoutResource
+  incomingOnSuccessEdges: []

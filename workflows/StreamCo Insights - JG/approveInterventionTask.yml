@@ -1,0 +1,126 @@
+id: approveInterventionTask
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  queryRefreshTime: ''
+  allowedGroupIds: []
+  streamResponse: false
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: |-
+    return {
+        assignees: ,
+        expiryTimeout: ,
+        inputsTemplateString: {
+      review: loopDailyInterventions.data
+    }
+      }
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  importedQueryInputs:
+    ordered: []
+  _additionalScope: []
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: null
+  editorMode: sql
+  queryRunTime: null
+  changesetObject: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  enableErrorTransformer: false
+  isHidden: false
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  evalType: script
+  importedQueryDefaults:
+    ordered: []
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '120000'
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2024-12-03T22:08:52.608Z
+blockData:
+  top: 688
+  left: 304
+  uuid: 6c3bca0c-fe44-4b7c-bd1b-4656aad958b3
+  options:
+    taskType: userTask
+    appConfig:
+      uuid: 3101e200-b350-11ef-80e1-ab7d150c450f
+      saveId: 351409600
+    assignees:
+      - id: 4
+        type: group
+    groupAssignments:
+      - 4
+    adminUserAssignments:
+      - 17
+    groupAssignmentNames:
+      - All Users
+    inputsTemplateString: |-
+      {
+        review: loopDailyInterventions.data
+      }
+    adminGroupAssignments: []
+    adminGroupAssignmentNames: []
+    adminUserAssignmentEmails:
+      - jgregory@retool.com
+    assigneesWithTextIdentifiers:
+      - type: group
+        name: All Users
+  pluginId: approveInterventionTask
+  blockType: asyncTask
+  editorType: JavascriptQuery
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts: []
+  outgoingPorts:
+    - id: 08043f8d-82c9-45bf-9462-a01036a3d2bb
+      name: waitNotification-6c3bca0c-fe44-4b7c-bd1b-4656aad958b3
+      type: waitNotification
+  incomingOnSuccessEdges:
+    - 645dcd45-5c82-408d-b033-9dd0cccefb43

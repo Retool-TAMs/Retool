@@ -1,0 +1,100 @@
+id: adminNotificationEmail
+type: datasource
+subtype: SMTPQuery
+resourceName: c698edf9-c24d-46c1-a5bb-d15d72471845
+resourceDisplayName: jgregory SMTP (Gmail)
+template:
+  queryRefreshTime: ''
+  allowedGroupIds: []
+  toEmail: ''
+  streamResponse: false
+  body: ''
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  attachment: []
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  showCcBcc: false
+  runWhenModelUpdates: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: ''
+  playgroundQueryUuid: ''
+  showReplyTo: false
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  subject: ''
+  importedQueryInputs:
+    ordered: []
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: null
+  queryRunTime: null
+  changesetObject: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  confirmationMessage: null
+  fromEmail: jgregory0328@gmail.com
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: smtp
+  watchedParams: []
+  enableErrorTransformer: false
+  isHidden: false
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  evalType: script
+  importedQueryDefaults:
+    ordered: []
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  replyToEmail: ''
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '10000'
+  bccEmail: ''
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  ccEmail: ''
+  bodyType: text
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2024-12-03T22:40:51.727Z
+blockData:
+  top: 736
+  left: 784
+  uuid: 25db50fc-5ba7-443b-a7f8-60ecb5af64a3
+  pluginId: adminNotificationEmail
+  blockType: default
+  editorType: SMTPQuery
+  resourceName: c698edf9-c24d-46c1-a5bb-d15d72471845
+  incomingPorts:
+    - portId: 08043f8d-82c9-45bf-9462-a01036a3d2bb
+      blockId: 6c3bca0c-fe44-4b7c-bd1b-4656aad958b3
+  incomingOnSuccessEdges: []
