@@ -49,7 +49,7 @@
     <JSONExplorer id="jsonExplorer1" value="{{ query1.data }}" />
     <Text
       id="text1"
-      value="👋 **Hello {{ current_user.firstName || 'friend' }}!**"
+      value="👋 **Hello!!!!!!!! {{ current_user.firstName || 'friend' }}!**"
       verticalAlign="center"
     />
   </Frame>
